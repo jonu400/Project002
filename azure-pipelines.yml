@@ -1,0 +1,17 @@
+
+
+trigger:
+- master
+
+pool:
+  name: Azure Pipelines
+
+stages:
+  - stage: Build
+    jobs:
+      - job: A1
+      - job: A2
+  - stage: Test
+    jobs:
+      - job: B
+      - job: C
